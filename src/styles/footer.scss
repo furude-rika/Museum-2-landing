@@ -1,5 +1,6 @@
 .footer {
 
+  position: relative;
   padding: 80px 20px 38px;
   background-color: $mainGreenColor;
   color: $headerWhiteColor;
@@ -56,6 +57,12 @@
     opacity: 0.5;
   }
 
+  &__arrow {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+  }
+
   @media (min-width: 500px) {
 
     &__container {
@@ -78,6 +85,11 @@
       margin-top: 100px;
       grid-template-columns: repeat(2, 130px);
       grid-column-gap: 40px;
+    }
+
+    &__arrow {
+      top: 125px;
+      right: 30px;
     }
   }
 
@@ -120,6 +132,11 @@
 
     &__bottom-info {
       margin-top: 77px;
+    }
+
+    &__arrow {
+      top: 165px;
+      right: 50px;
     }
   }
 }
